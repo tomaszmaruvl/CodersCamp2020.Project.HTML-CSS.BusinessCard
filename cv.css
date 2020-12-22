@@ -219,9 +219,17 @@ html {
     .navbar {
       flex-direction: column;
     }
+    .footer-nav{
+      visibility: hidden;
+      height: 0;
+    }
+    body, html{
+      padding-bottom: 0%;
+    }
     .navbar a {
       width: 100%;
       text-align: center;
+      border:white 1px solid
     }
   }
 
@@ -230,4 +238,8 @@ html {
     #findme{
         visibility: hidden;
     }
+  }
+
+  #home{
+    margin-left: 3em;
   }
