@@ -1,231 +1,64 @@
 * {
-  box-sizing: border-box;
-  
-}
-
-body,
-html {
-  font-family: consolas;
-  margin: 0;
-  height: 100%;
-  background-color: rgb(172, 172, 172);
-
-}
-
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
-.navbar a {
-  color: white;
-  padding: 1em 1em;
-  flex: 1;
-  text-decoration: none;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.side {
-  flex: 3;
-  background-color: white;
-  padding: 1%;
-  text-align: center;
-  margin: 0.5%;
-}
-
-.side img {
-  background-color: #aaa;
-  max-height: 50%;
-  max-width: 60%;
-  border-radius: 50%;
-  margin: 5% 5% 0% 5%;
-}
-
-.main {
-  flex: 7;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(172, 172, 172);
-}
-
-.cv-section {
-  flex: 1;
-  margin: 1%;
-  background-color: white;
-  padding:2%;
-}
-
-.card-shadow {
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-}
-
-.basic-info {
-  text-align: left;
-  vertical-align: center;
-  overflow: auto;
-  padding-bottom: 2%;
-}
-
-.basic-info i {
-  margin-right: 5%;
-  margin-left: 5%;
-  font-size: 1.5em;
-  color: rgb(102, 102, 102);
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 2.5%;
-  padding: 0;
-}
-
-.skill-name {
-  margin: 3% 5% 2% 5%;
-  font-size: 1em;
-}
-
-.skill-bar100 {
-  height: 1.2em;
-  width: 10%;
-  border: solid black 1px;
-  border-radius: 1em;
-  margin-top: 0;
-  margin-left: 5%;
-  background: green;
-}
-
-.skill-bar100:hover {
-  background: greenyellow;
-  transition: linear 1s;
-  opacity: 100%;
-  width: 90%;
-}
-
-.skill-bar100:hover::after {
-  content: "100%";
-  text-align: center;
-  padding-left: 45%;
-}
-
-.skill-bar60 {
-  height: 1.2em;
-  width: 10%;
-  border: solid black 1px;
-  border-radius: 1em;
-  margin-top: 0;
-  margin-left: 5%;
-  background: green;
-  overflow: hidden;
-}
-
-.skill-bar60:hover {
-  background: greenyellow;
-  transition: linear 0.5s;
-  opacity: 100%;
-  width: 54%;
-}
-
-.skill-bar60:hover::after {
-  content: "60%";
-  text-align: center;
-  padding-left: 45%;
-}
-
-.skill-bar30 {
-  height: 1.2em;
-  width: 10%;
-  border: solid black 1px;
-  border-radius: 1em;
-  margin-top: 0;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  background: green;
-}
-
-.skill-bar30:hover {
-  background: greenyellow;
-  transition: linear 0.5s;
-  opacity: 100%;
-  width: 28%;
-}
-
-.skill-bar30:hover::after {
-  content: "30%";
-  text-align: center;
-  padding-left: 45%;
-}
-
-.footer {
-  text-align: right;
-  background: #ddd;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 1em;
-  padding-left: 1em;
-  height: 3em;
-}
-
-.footer img {
-  flex: 1;
-  max-height: 2em;
-  max-width: 2em;
-  margin: 0.5em;
-}
-
-.footer-nav {
-    display: flex;
-  float: right;
-  flex: 1;
-  font-size: 1em;
-}
-
-.footer-nav a {
-  color: rgb(34, 30, 30);
-  padding: 1em 1em;
-  text-decoration: none;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.footer-nav a:hover {
-  background-color: white;
-  color: black;
-}
-
-
-
-@media screen and (max-width: 700px) {
-    .row,
-    .navbar {
-      flex-direction: column;
-    }
-    .navbar a {
-      width: 100%;
-      text-align: center;
-    }
+    box-sizing: border-box;
   }
-
   
-@media screen and (max-width: 550px) {
-    #findme{
-        visibility: hidden;
-    }
+  body,
+  html {
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .header {
+    height: 100%;
+    padding: 5% 5%;
+    background-image: url(./img/start_tlo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .title {
+
+    width: 100%;
+    font-size: 3em;
+    text-justify: auto;
+    font-family: consolas;
+  }
+  
+  .button {
+    margin-top: 5px;
+    padding: 0.5%;
+    text-align: center;
+    font-family: consolas;
+    height: fit-content;
+    width: fit-content;
+    border: solid black 0.1em;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .button i {
+    visibility: hidden;
+  }
+  .button:hover {
+    background: greenyellow;
+    transition: linear 0.15s;
+    opacity: 100%;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+  
+  .button:hover i {
+    content: "";
+    visibility: visible;
+    font-size: 1em;
+    width: auto;
+  }
+  
+  .button a {
+    color: black;
+    text-decoration: none;
   }
