@@ -5,7 +5,7 @@
 
 body,
 html {
-  font-family: Arial;
+  font-family: consolas;
   margin: 0;
   height: 100%;
   background-color: rgb(172, 172, 172);
@@ -38,7 +38,7 @@ html {
 }
 
 .side {
-  flex: 1;
+  flex: 3;
   background-color: white;
   padding: 1%;
   text-align: center;
@@ -54,7 +54,7 @@ html {
 }
 
 .main {
-  flex: 3;
+  flex: 7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +64,8 @@ html {
 .cv-section {
   flex: 1;
   margin: 1%;
-  background-color: white
+  background-color: white;
+  padding:2%;
 }
 
 .card-shadow {
@@ -77,6 +78,7 @@ html {
   text-align: left;
   vertical-align: center;
   overflow: auto;
+  padding-bottom: 2%;
 }
 
 .basic-info i {
@@ -131,6 +133,7 @@ html {
   margin-top: 0;
   margin-left: 5%;
   background: green;
+  overflow: hidden;
 }
 
 .skill-bar60:hover {
@@ -206,6 +209,7 @@ html {
   background-color: white;
   color: black;
 }
+
 
 
 @media screen and (max-width: 700px) {
